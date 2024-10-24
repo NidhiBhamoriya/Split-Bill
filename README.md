@@ -2,7 +2,7 @@
 
 ## 📖 Overview:
 
-### Developed the Split Bill web application to simplify the process of splitting bills among friends and group.
+### Developed the Split Bill web application to evenly distribute amounts, including tips, among friends and groups.
 
 **->** This application allows users to easily manage and calculate shared expenses, making group outings or events hassle-free.
 
