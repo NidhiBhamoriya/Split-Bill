@@ -35,7 +35,7 @@
 
 ## 🚀 Live Demo
 
-## 🌐 Check out the live version of the project [here](your-live-demo-link)
+## 🌐 Check out the live version of the project [here](https://nidhibhamoriya.github.io/Split-Bill/)
 
 
 ### 💻 Landscape view :
