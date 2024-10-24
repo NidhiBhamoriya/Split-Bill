@@ -1,0 +1,189 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px 16px;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+}
+
+.project-name {
+    text-align: center; 
+    font-size: 32px; 
+    margin-top: 20px;
+    color: #333;
+    letter-spacing:  1px;
+    margin-bottom: -2px;
+}
+
+main{
+    max-width: 720px;
+    margin: 0 auto;      /*margin: auto; is a property used to center an element horizontally within its container. When applied, it automatically calculates equal margins on the left and right sides of the element*/
+    display: flex;
+    margin-block: 16px;
+    gap: 22px;
+    align-items:center;    /*to decrese the height of 2nd card*/
+}
+main>div{    /*main ke ander direct div*/
+    width: 100%;    /* to adjust 2 div in main, after even display flex, as we give auto, max width*/ /* ak ko hi 100% dedege dono div aps m smzota kr lege*/
+}
+
+.input-container{
+    border: solid 1.5px black;
+    padding: 0px 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color:#6f3cff;
+    overflow: hidden;      /*1st way*/
+}
+
+.input-container input{
+    border: none;     /* border means, that are visible remove it*/
+    outline: none;   /* outline means when we click than input box get border color more black, so remove that property also */
+    /*appearance: none;  /*by appearance property we can't remove up and down arrow ▲▼  , 40- 44 code is used to remove*/
+    width: 100%;  /*as we remove input border and all, and create our custom input section, but in input type section the input length is small comp. to custom*/
+    /*but after even giving 100% the height is also increses because input type cover all div, that why it, also take span width,, and then si its */
+    /*so we will use display flex in input container*/
+    padding: 10px;
+    font-size: inherit;
+    color: inherit;
+    /* border-radius: 4px; */   /*2nd way*/
+    /* background-color: transparent;  3rd way as we give  border radius to input container, but still input type also have some height, so it must be maitained */
+}
+
+.bill-input{
+    font-size: 20px;
+    color: #6f3cff;
+    margin-top: -1px;
+}
+
+.bill-output{
+    background-color: #34568b;
+    color: white;
+    border-radius: 10px;
+    padding: 27px;
+    display: flex;     /*to make equal gap bw the elements of output card*/
+    flex-direction: column;
+    gap: 32px;
+}
+
+input::-webkit-outer-spin-button,               /* to hide the up, down arrow of input type number*/
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tip-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.tip{
+    background-color: #6f3cff;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 19px;
+    border: none;
+}
+
+p{
+    margin-bottom: 8px;
+}
+
+.gray-input{
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    font-size: 16px;
+    padding: 7px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+#people{
+    font-size: 17px;
+}
+
+.generate-bill-btn{
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    border-radius: 7px;
+    background-color: #9c60ff;
+    color: white;
+    cursor: pointer;
+    margin-top: 23px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* bill-output > p > span */
+/* or */
+/* directly */
+.bill-output p span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bill-output p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 540;
+}
+
+.reset-btn{
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    /* cursor: not-allowed; */
+    font-family: inherit;
+}
+
+
+.selected{
+    outline: 4px solid rgba(255, 162, 0, 0.888);    /*outline mean->outside, outside of border*/
+}
+
+input:disabled{
+    cursor: not-allowed;
+}
+
+.generate-bill-btn:disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.tip-container.disabled{  
+    opacity: 0.4;              /*parent ki hi opacity km kr dete sbhi tip ki ho jayeggi automatically*/
+}
+.tip-container.disabled .tip{
+    cursor: not-allowed;  /*sirf tip pr cursor not allowed*/  /*fir bhi sbhi tips pr click krne pr outline to a rhi h abhi bhi*/
+}
+
+
+@media(max-width: 550px){
+    main{
+        flex-direction: column;
+    }
+    .project-name {
+        font-size: 30px; 
+    }
+}
+
