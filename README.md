@@ -37,10 +37,17 @@
 
 ## 🌐 Check out the live version of the project [here](your-live-demo-link)
 
+
 ### 💻 Landscape view :
 
-![Landscape View](link-to-your-landscape-view-image)
+[landscape_view.webm](https://github.com/user-attachments/assets/1db0c4a7-b5c6-49b3-a6ff-f8c6e5886d50)
+
 
 ### 📱 Portrait view :
 
-![Portrait View](link-to-your-portrait-view-image)
+[split_bill_portrait_view.webm](https://github.com/user-attachments/assets/744d1da3-185b-46ae-bc11-e087e9c94d89)
+
+
+[split_bill_portrait_view2.webm](https://github.com/user-attachments/assets/3aeb7033-38a0-4ef8-a62d-bbb35b36e8c3)
+
+
